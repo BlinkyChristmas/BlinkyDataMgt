@@ -105,7 +105,7 @@ auto SourceCollection::processFor(const std::filesystem::path  &inputFile, std::
         for (const auto &chunk:entry.chunks) {
             auto buffer = std::vector<char>(chunk.length,0) ;
             std::cout << "\t\tProcessing chunk: " << chunk.label << std::endl;
-            for (auto frame = 0 ; frame < inputHeader.frameCount ; frame++) {
+            for (std::uint32_t frame = 0 ; frame < inputHeader.frameCount ; frame++) {
                 input.seekg(inputHeader.offsetToData + (frame * inputHeader.frameLength) + chunk.oldIndex , std::ios::beg) ;
                 output.seekp(inputHeader.offsetToData + (frame * outHeader.frameLength) + chunk.newIndex, std::ios::beg) ;
                 input.read(buffer.data(), buffer.size());

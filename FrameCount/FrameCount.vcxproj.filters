@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{5e5dd75c-e275-468c-9f7a-13c0178a2b97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="containers">
+      <UniqueIdentifier>{754f5089-b197-4297-90f4-1288c32f3fe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="containers\wavfile">
+      <UniqueIdentifier>{e9bc9d9d-66df-4b2f-86a6-084643b28b02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="containers\lightfile">
+      <UniqueIdentifier>{dce483f6-87d6-4060-a2bb-30a7509855f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utility\buffer.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utility\mapfile.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utility\timeutil.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\containers\wavfile\chunkheader.cpp">
+      <Filter>containers\wavfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\containers\wavfile\fileheader.cpp">
+      <Filter>containers\wavfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\containers\wavfile\mwavfile.cpp">
+      <Filter>containers\wavfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\containers\wavfile\wavfmtchunk.cpp">
+      <Filter>containers\wavfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\containers\lightfile\lightfile.cpp">
+      <Filter>containers\lightfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\containers\lightfile\lightheader.cpp">
+      <Filter>containers\lightfile</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\utility\buffer.hpp">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utility\dbgutil.hpp">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utility\mapfile.hpp">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utility\strutil.hpp">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utility\timeutil.hpp">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\containers\wavfile\chunkheader.hpp">
+      <Filter>containers\wavfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\containers\wavfile\fileheader.hpp">
+      <Filter>containers\wavfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\containers\wavfile\mwavfile.hpp">
+      <Filter>containers\wavfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\containers\wavfile\wavfmtchunk.hpp">
+      <Filter>containers\wavfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\containers\lightfile\lightfile.hpp">
+      <Filter>containers\lightfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\containers\lightfile\lightheader.hpp">
+      <Filter>containers\lightfile</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

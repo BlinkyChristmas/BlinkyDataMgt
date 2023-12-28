@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="containers">
+      <UniqueIdentifier>{56d034bb-721a-4dd5-8a3a-1724eb4b2c08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="containers\lightfile">
+      <UniqueIdentifier>{dd969a1b-ac47-453c-81ba-3fbd62e1c99d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{8d829d66-80f8-4d74-b81d-52f0fa1ded44}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\containers\lightfile\lightheader.cpp">
+      <Filter>containers\lightfile</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\containers\lightfile\lightheader.hpp">
+      <Filter>containers\lightfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utility\strutil.hpp">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utility\dbgutil.hpp">
+      <Filter>utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -31,6 +31,7 @@ add_executable(Shuffler
     
     ${PROJECT_SOURCE_DIR}/utility/strutil.hpp
     ${PROJECT_SOURCE_DIR}/containers/lightfile/lightheader.hpp
+    ${PROJECT_SOURCE_DIR}/containers/lightfile/lightheader.cpp
 )
     
 # ***********************************************************************
