@@ -18,12 +18,12 @@ set(CMAKE_CXX_STANDARD 17)
 # The executable we are making
 # ***********************************************************************
 add_executable(LightFormatConvert
-    ${PROJECT_SOURCE_DIR}/LightFormatConvert/main.cpp
+    ${PROJECT_SOURCE_DIR}/main.cpp
     
     
-    ${PROJECT_SOURCE_DIR}/utility/strutil.hpp
-    ${PROJECT_SOURCE_DIR}/containers/lightfile/lightheader.hpp
-    ${PROJECT_SOURCE_DIR}/containers/lightfile/lightheader.cpp
+    ${PROJECT_SOURCE_DIR}/../utility/strutil.hpp
+    ${PROJECT_SOURCE_DIR}/../containers/lightfile/lightheader.hpp
+    ${PROJECT_SOURCE_DIR}/../containers/lightfile/lightheader.cpp
 
 )
     
@@ -32,8 +32,8 @@ add_executable(LightFormatConvert
 # ***********************************************************************
 target_include_directories(LightFormatConvert
     PUBLIC
-        ${PROJECT_SOURCE_DIR}
-        ${PROJECT_SOURCE_DIR}/LightFormatConvert
+        ${PROJECT_SOURCE_DIR}/
+        ${PROJECT_SOURCE_DIR}/../
 )
 # ***********************************************************************
 # Compilier switches/defines

@@ -18,20 +18,20 @@ set(CMAKE_CXX_STANDARD 17)
 # The executable we are making
 # ***********************************************************************
 add_executable(Shuffler
-    ${PROJECT_SOURCE_DIR}/Shuffler/main.cpp
-    ${PROJECT_SOURCE_DIR}/Shuffler/chunk.cpp
-    ${PROJECT_SOURCE_DIR}/Shuffler/chunk.hpp
-    ${PROJECT_SOURCE_DIR}/Shuffler/inputlist.cpp
-    ${PROJECT_SOURCE_DIR}/Shuffler/inputlist.hpp
-    ${PROJECT_SOURCE_DIR}/Shuffler/sourcecollection.cpp
-    ${PROJECT_SOURCE_DIR}/Shuffler/sourcecollection.hpp
-    ${PROJECT_SOURCE_DIR}/Shuffler/sourceselection.cpp
-    ${PROJECT_SOURCE_DIR}/Shuffler/sourceselection.hpp
+    ${PROJECT_SOURCE_DIR}/main.cpp
+    ${PROJECT_SOURCE_DIR}/chunk.cpp
+    ${PROJECT_SOURCE_DIR}/chunk.hpp
+    ${PROJECT_SOURCE_DIR}/inputlist.cpp
+    ${PROJECT_SOURCE_DIR}/inputlist.hpp
+    ${PROJECT_SOURCE_DIR}/sourcecollection.cpp
+    ${PROJECT_SOURCE_DIR}/sourcecollection.hpp
+    ${PROJECT_SOURCE_DIR}/sourcesection.cpp
+    ${PROJECT_SOURCE_DIR}/sourcesection.hpp
 
     
-    ${PROJECT_SOURCE_DIR}/utility/strutil.hpp
-    ${PROJECT_SOURCE_DIR}/containers/lightfile/lightheader.hpp
-    ${PROJECT_SOURCE_DIR}/containers/lightfile/lightheader.cpp
+    ${PROJECT_SOURCE_DIR}/../utility/strutil.hpp
+    ${PROJECT_SOURCE_DIR}/../containers/lightfile/lightheader.hpp
+    ${PROJECT_SOURCE_DIR}/../containers/lightfile/lightheader.cpp
 )
     
 # ***********************************************************************
@@ -40,7 +40,7 @@ add_executable(Shuffler
 target_include_directories(Shuffler
     PUBLIC
         ${PROJECT_SOURCE_DIR}
-        ${PROJECT_SOURCE_DIR}/Shuffler
+        ${PROJECT_SOURCE_DIR}/../
 )
 # ***********************************************************************
 # Compilier switches/defines
