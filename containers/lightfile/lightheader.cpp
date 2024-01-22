@@ -38,12 +38,12 @@ auto LightHeader::load(const char *ptr) -> void {
         // we are going to "assume old format"?
         float check = 0.0 ;
         std::copy(ptr+1,ptr+5,reinterpret_cast<char*>(&check));
-        if ( double(check) != 0.037) {
-            throw std::runtime_error("Unsupported light format");
+        if ( int( check * 1000.0 ) != 37) {
+            throw std::runtime_error("Unsupported light format: time was:" + std::to_string(double(check)));
         }
         // we need the frame acount and frame length
         sampleRate = 37 ;
-        std::copy(ptr+5,ptr+9,reinterpret_cast<char*>(&frameCount)) ;
+        std::copy( ptr+5, ptr+9,reinterpret_cast<char*>(&frameCount) ) ;
         std::copy(ptr+9,ptr+13,reinterpret_cast<char*>(&frameLength)) ;
         offsetToData = 13 ;
         return ;
@@ -71,8 +71,9 @@ auto LightHeader::load(std::istream &input) -> void {
         input.seekg(1,std::ios::beg) ;
         
         input.read(reinterpret_cast<char*>(&check),4) ;
-        if ( double(check) != 0.037) {
-            throw std::runtime_error("Unsupported light format");
+        if ( int(check*1000.0) != 37){
+            throw std::runtime_error("Unsupported light format: "s  + std::to_string(double(check)));
+
         }
         // we need the frame acount and frame length
         sampleRate = 37 ;
