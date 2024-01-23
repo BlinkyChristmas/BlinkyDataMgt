@@ -32,7 +32,7 @@
 struct LightHeader {
     static constexpr auto NAMESIZE = 30 ;
     static constexpr auto OFFSETTODATA = (6 * 4) + NAMESIZE ;
-    static constexpr auto SIGNATURE = 0x7468676c ; //'lgth' in big endian
+    static constexpr auto SIGNATURE = 0x5448474c ; //'LGHT' in big endian
 
     std::uint32_t signature ;
     std::uint32_t version ;
